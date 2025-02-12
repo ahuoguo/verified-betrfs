@@ -14,12 +14,12 @@ For a diagram of the refinement proof structure we're building in the `verus` se
 
 ## Commands
 
-`$verus -Zunpretty=expanded bundle.rs` to get expanded macro representation of a verus file.
+`$verus -Zunpretty=expanded lib.rs` to get expanded macro representation of a verus file.
 
-`$verus --verify-module coordination_layer::CoordinationSystemRefinement_v bundle.rs`
+`$verus --verify-module coordination_layer::CoordinationSystemRefinement_v lib.rs`
 To verify just a single module.
 
-`$verus --verify-module coordination_layer::CoordinationSystemRefinement_v bundle.rs --triggers-silent --expand-errors --multiple-errors 1`
+`$verus --verify-module coordination_layer::CoordinationSystemRefinement_v lib.rs --triggers-silent --expand-errors --multiple-errors 1`
 
 To disable "Recommends" checks (since `verus` will sometimes incorrectly warn about recommends clauses
 not being satisfied when they are provably satisfied).
@@ -29,7 +29,7 @@ not being satisfied when they are provably satisfied).
 
 If you find yourself buried in error output, use this command to only get the top (and also get it in color):
 ```
-$verus --verify-module coordination_layer::CoordinationSystemRefinement_v bundle.rs --triggers-silent --expand-errors --multiple-errors 2 --color=always 2>&1 | head -n 50
+$verus --verify-module coordination_layer::CoordinationSystemRefinement_v lib.rs --triggers-silent --expand-errors --multiple-errors 2 --color=always 2>&1 | head -n 50
 ```
 
 ### Pushing `.record-history` History
