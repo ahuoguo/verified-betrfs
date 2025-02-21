@@ -9,6 +9,10 @@ use crate::spec::KeyType_t::*;
 use crate::betree::Domain_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 // Provides definitions and libraries for pivot tables. A pivot
 // table is a sorted list of *pivot* keys that divides the keyspace into

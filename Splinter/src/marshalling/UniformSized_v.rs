@@ -4,6 +4,10 @@ use builtin::*;
 use builtin_macros::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 // A marshalling Format *instance* is UniformSized if it always marshals to exactly the same number
 // of bytes regardless of the value being marshalled.

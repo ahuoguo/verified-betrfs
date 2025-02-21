@@ -12,8 +12,10 @@ use crate::betree::Utils_v::*;
 use crate::betree::PivotBranch_v::*;
 
 verus! {
-
-broadcast use Node::route_ensures;
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              Node::route_ensures;
 
 impl Node {
     // Takes in a btree node and returns the buffer abstraction

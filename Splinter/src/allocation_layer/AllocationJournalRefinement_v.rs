@@ -11,6 +11,10 @@ use crate::allocation_layer::LikesJournal_v::{LikesJournal};
 use crate::allocation_layer::AllocationJournal_v::*;
 
 verus!{
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 impl AllocationJournal::Step {
     pub open spec fn i(self) -> LikesJournal::Step {

@@ -22,13 +22,16 @@ use crate::betree::SplitRequest_v::*;
 use crate::abstract_system::StampedMap_v::*;
 use crate::abstract_system::MsgHistory_v::*;
 
-verus! { 
+verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              PivotTable::route_lemma;
+
 // Introduces a diskview and pointers, carries forward filtered buffer stacks inside the 
 // betree nodes. There are two disk views here. One for the BetreeNode type, and one for 
 // the abstract Branch type. A refining state machine replaces single-node branches with
 // b+trees.
-
-broadcast use PivotTable::route_lemma;
 
 #[verifier::ext_equal]
 pub struct BetreeNode {

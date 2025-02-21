@@ -15,8 +15,11 @@ use crate::betree::PivotBetree_v::*;
 use crate::betree::SplitRequest_v::*;
 
 verus! {
-
-broadcast use PivotTable::route_lemma, PivotTable::route_is_lemma;
+broadcast use 
+            //   vstd::seq_lib::group_seq_properties,
+            //   vstd::map_lib::group_map_properties,
+            //   vstd::set_lib::group_set_properties,
+              PivotTable::route_lemma, PivotTable::route_is_lemma;
 
 impl BetreeNode {
     pub open spec(checked) fn i_children_seq(self, start: int) -> Seq<PagedBetree_v::BetreeNode>
@@ -360,6 +363,7 @@ impl BetreeNode {
         }
     }
 
+    #[verifier::spinoff_prover]
     proof fn split_commutes_with_i_nonsplit(self, request: SplitRequest, key: Key)
         requires 
             self.can_split_parent(request),
@@ -380,12 +384,15 @@ impl BetreeNode {
         let r = self->pivots.route(key);
 
         if r < child_idx {
+            // TODO: need to remind this is true when verifying the whole thing
+            // assert(0 <= r < result->pivots.pivots.len());
             assert(Element::lte(result->pivots.pivots[r], to_element(key))); // trigger for route_is_lemma
-
         }
 
         self.i_children_lemma();
         result.i_children_lemma();
+        // TODO: need to remind this is true when verifying the whole thing
+        // assert(result is Node);
         assert(result.i_children().map[key] == i_result.child(key));
     }
 

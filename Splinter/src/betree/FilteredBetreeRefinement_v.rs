@@ -16,8 +16,10 @@ use crate::betree::FilteredBetree_v::*;
 use crate::betree::SplitRequest_v::*;
 
 verus! {
-
-broadcast use PivotTable::route_lemma; 
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              PivotTable::route_lemma; 
 
 impl BetreeNode {
     pub open spec(checked) fn i_buffer(self) -> SimpleBuffer

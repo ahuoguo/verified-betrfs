@@ -14,6 +14,10 @@ use crate::abstract_system::StampedMap_v::*;
 use crate::abstract_system::MsgHistory_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 // This is a functional model of a Betree, but it doesn't require that child
 // maps be stored as contiguous ranges separated by a finite sets of pivots.
 // That's complexity that we push down a layer, to the PivotBetree. Here,

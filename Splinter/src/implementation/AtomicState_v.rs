@@ -10,6 +10,10 @@ use crate::spec::AsyncDisk_t::*;
 use crate::implementation::DiskLayout_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 pub enum RecoveryState {
     // Haven't done anything; don't know anything. Better not handle user IO.

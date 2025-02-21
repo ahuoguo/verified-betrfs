@@ -10,8 +10,10 @@ use crate::disk::GenericDisk_v::*;
 use crate::allocation_layer::MiniAllocator_v;
 
 verus! {
-
-broadcast use crate::spec::ImplDisk_t::page_count_equals_ipage_count;
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              crate::spec::ImplDisk_t::page_count_equals_ipage_count;
 
 pub struct PageAllocator {
     pub observed: IPage, // pages from [0, observed) are reachable from superblock Repr 
