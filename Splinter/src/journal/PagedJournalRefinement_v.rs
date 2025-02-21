@@ -19,6 +19,10 @@ use crate::abstract_system::AbstractJournal_v::*;
 use crate::journal::PagedJournal_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 impl JournalRecord {
     // TODO(jonh): WHY ISN'T THIS written relative to cropped_prior!?

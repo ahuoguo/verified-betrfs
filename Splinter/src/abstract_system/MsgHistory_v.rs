@@ -9,7 +9,10 @@ use crate::spec::Messages_t::*;
 use crate::abstract_system::StampedMap_v::*;
 
 verus! {
-
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+              
 /// A KeyedMessage stores a "key" to perform the operation in the stored
 /// "message" on.
 pub struct KeyedMessage { 

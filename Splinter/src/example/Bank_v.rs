@@ -8,6 +8,10 @@ use state_machines_macros::tokenized_state_machine;
 use crate::BankSpec_t::{Request, Reply, Input, Output, ReqID};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 type AccID = nat;
 

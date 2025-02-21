@@ -16,6 +16,10 @@ use state_machines_macros::state_machine;
 // TODO (tenzin): break out everything in this file into separate files/modules
 // (cleaner logical breaks)
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 // Parallels a structure from Dafny (specifically from MapSpec.s.dfy)
 // Where the abstract top-level map specification uses two variables to

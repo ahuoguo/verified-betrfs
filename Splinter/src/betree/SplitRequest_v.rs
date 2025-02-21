@@ -7,6 +7,10 @@ use builtin_macros::*;
 use crate::spec::KeyType_t::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 pub enum SplitRequest {
     SplitLeaf{child_idx: nat, split_key: Key},
     SplitIndex{child_idx: nat, child_pivot_idx: nat}

@@ -14,6 +14,10 @@ use crate::betree::OffsetMap_v::*;
 use crate::disk::GenericDisk_v::{Address};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 #[verifier::ext_equal]
 pub struct BufferDisk<T> {
     pub entries: Map<Address, T>

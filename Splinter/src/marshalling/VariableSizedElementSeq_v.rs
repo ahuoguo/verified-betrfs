@@ -17,6 +17,10 @@ use crate::marshalling::ResizableUniformSizedSeq_v::*;
 use crate::marshalling::math_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties;
+
 
 // A VariableSizedElementSeqMarshalling conveys a variable number of variably-sized elements.
 // You can't Set into one of these (because we're not gonna do de-fragmentation), only append.

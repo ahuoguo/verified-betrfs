@@ -25,8 +25,10 @@ use crate::betree::LinkedBetree_v::*;
 use crate::betree::SplitRequest_v::*;
 
 verus! {
-
-broadcast use PivotTable::route_lemma, Buffer::contains_refines, Buffer::query_refines;
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              PivotTable::route_lemma, Buffer::contains_refines, Buffer::query_refines;
 
 impl<T: Buffer> LinkedBetree<T>{
     pub open spec/*XXX(checked)*/ fn i_children_seq(self, ranking: Ranking, start: nat) -> Seq<FilteredBetree_v::BetreeNode>
