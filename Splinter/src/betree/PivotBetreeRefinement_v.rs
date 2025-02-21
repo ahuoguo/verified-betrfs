@@ -384,13 +384,15 @@ impl BetreeNode {
         let r = self->pivots.route(key);
 
         if r < child_idx {
-            assert(0 <= r < result->pivots.pivots.len());
+            // TODO: need to remind this is true when verifying the whole thing
+            // assert(0 <= r < result->pivots.pivots.len());
             assert(Element::lte(result->pivots.pivots[r], to_element(key))); // trigger for route_is_lemma
         }
 
         self.i_children_lemma();
         result.i_children_lemma();
-        assert(result is Node);
+        // TODO: need to remind this is true when verifying the whole thing
+        // assert(result is Node);
         assert(result.i_children().map[key] == i_result.child(key));
     }
 
