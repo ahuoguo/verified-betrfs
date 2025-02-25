@@ -2464,7 +2464,7 @@ impl<T: Buffer> Path<T>{
             self.valid_ranking_throughout(ranking);
 
             let r = self.linked.root().pivots.route(self.key);
-            assert(self.linked.root().valid_child_index(r as nat)); // trigger
+//            assert(self.linked.root().valid_child_index(r as nat)); // trigger
 //            assert(self.subpath().linked.has_root());
 
             let intermediate_ranking = self.subpath().ranking_after_substitution(replacement, sub_path_addrs, ranking);
@@ -2487,7 +2487,7 @@ impl<T: Buffer> Path<T>{
 //                    assert(intermediate_ranking.contains_key(new_root.children[i as int].unwrap()));
                     assert(intermediate_ranking.contains_key(self.linked.root.unwrap()));
 
-                    assert(new_ranking.contains_key(new_root.children[i as int].unwrap()));
+//                    assert(new_ranking.contains_key(new_root.children[i as int].unwrap()));
 //                    assert(new_ranking[new_root.children[i as int].unwrap()] < new_ranking[new_root_addr]);
                 }
             }

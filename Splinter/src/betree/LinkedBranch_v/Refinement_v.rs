@@ -226,7 +226,7 @@ pub proof fn query_internal_refines(pre: LinkedBranch, ranking: Ranking, key: Ke
 //        assert(child.wf());
 //        assert(child.root().wf());
 //        assert(child.valid_ranking(ranking));
-        assert(child.keys_strictly_sorted_internal(ranking));
+//        assert(child.keys_strictly_sorted_internal(ranking));
 //        assert(child.query_internal(key, ranking) == msg);
         query_internal_refines(child, ranking, key, msg);
 //        assert(0 <= r+1 < pre.i_internal(ranking)->children.len());
@@ -599,7 +599,7 @@ pub proof fn split_refines_internal(pre: LinkedBranch, ranking: Ranking, post_ra
 
             if i == r {
                 split_refines_internal(pre.child_at_idx(r), ranking, post_ranking, new_child_addr, path.subpath(), split_arg);
-                assert(post_i->children[i] == post.child_at_idx(r).i_internal(post_ranking));
+//                assert(post_i->children[i] == post.child_at_idx(r).i_internal(post_ranking));
                 assert(i_then_split->children[i] == pre.child_at_idx(r).i_internal(ranking).split(path.subpath().i_internal(ranking), split_arg.i()));
             } else {
 //                assert(i_then_split->children[i] == pre_i->children[i]);

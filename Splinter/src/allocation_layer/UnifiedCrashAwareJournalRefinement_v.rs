@@ -133,7 +133,7 @@ impl ImageState {
 //            assert(big_index[lsn3] == addr.au);
 
 //            assert(lsn1 <= lsn2 <= lsn3);
-            assert(big_index.contains_key(lsn1));
+//            assert(big_index.contains_key(lsn1));
 //            assert(big_index[lsn1] == addr.au);
 
             assert(AllocationJournal_v::contiguous_lsns(big_index, lsn1, lsn2, lsn3));

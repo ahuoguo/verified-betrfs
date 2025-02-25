@@ -1,0 +1,2159 @@
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 0.94s
+     Running `/local/abai/verus/source/target/release/minimize -d ./splinter-min-multiset /local/abai/verified-betrfs/Splinter/src/lib.d`
+verus succeeded with time: 26413ms
+minimization of ./splinter-min-multiset/0/lib.rs is completed
+minimization of ./splinter-min-multiset/1/abstract_system.rs is completed
+minimization of ./splinter-min-multiset/2/abstract_system/AbstractCrashAwareJournal_v.rs is completed
+minimization of ./splinter-min-multiset/3/abstract_system/AbstractCrashAwareMap_v.rs is completed
+commenting out line Lines { lines: 183..=183 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+minimization of ./splinter-min-multiset/5/abstract_system/AbstractCrashAwareSystem_v.rs is completed
+minimization of ./splinter-min-multiset/6/abstract_system/AbstractJournal_v.rs is completed
+minimization of ./splinter-min-multiset/7/abstract_system/AbstractMap_v.rs is completed
+commenting out line Lines { lines: 138..=152 } in "./splinter-min-multiset/8/abstract_system/MsgHistory_v.rs"
+minimization of ./splinter-min-multiset/9/abstract_system/StampedMap_v.rs is completed
+minimization of ./splinter-min-multiset/10/allocation_layer.rs is completed
+commenting out line Lines { lines: 162..=162 } in "./splinter-min-multiset/11/allocation_layer/AllocationCrashAwareJournalRefinement_v.rs"
+commenting out line Lines { lines: 276..=284 } in "./splinter-min-multiset/12/allocation_layer/AllocationCrashAwareJournal_v.rs"
+commenting out line Lines { lines: 107..=107 } in "./splinter-min-multiset/13/allocation_layer/AllocationJournalRefinement_v.rs"
+commenting out line Lines { lines: 272..=272 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+minimization of ./splinter-min-multiset/15/allocation_layer/Likes_v.rs is completed
+commenting out line Lines { lines: 154..=154 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/12/allocation_layer/AllocationCrashAwareJournal_v.rs is completed
+commenting out line Lines { lines: 79..=79 } in "./splinter-min-multiset/17/allocation_layer/LikesBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./splinter-min-multiset/8/abstract_system/MsgHistory_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 315..=316 } in "./splinter-min-multiset/11/allocation_layer/AllocationCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 196..=196 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 129..=151 } in "./splinter-min-multiset/13/allocation_layer/AllocationJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 172..=184 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 269..=273 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/17/allocation_layer/LikesBetreeRefinement_v.rs is completed
+commenting out line Lines { lines: 67..=69 } in "./splinter-min-multiset/18/allocation_layer/LikesJournalRefinement_v.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 325..=326 } in "./splinter-min-multiset/11/allocation_layer/AllocationCrashAwareJournalRefinement_v.rs"
+commenting out line Lines { lines: 620..=627 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 232..=232 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 300..=300 } in "./splinter-min-multiset/8/abstract_system/MsgHistory_v.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 363..=363 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+commenting out line Lines { lines: 187..=187 } in "./splinter-min-multiset/13/allocation_layer/AllocationJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 80..=80 } in "./splinter-min-multiset/18/allocation_layer/LikesJournalRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/11/allocation_layer/AllocationCrashAwareJournalRefinement_v.rs is completed
+commenting out line Lines { lines: 89..=89 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 667..=675 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+commenting out line Lines { lines: 278..=278 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 359..=375 } in "./splinter-min-multiset/8/abstract_system/MsgHistory_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 235..=235 } in "./splinter-min-multiset/13/allocation_layer/AllocationJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 361..=366 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 77..=81 } in "./splinter-min-multiset/18/allocation_layer/LikesJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=91 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 285..=285 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 694..=699 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/8/abstract_system/MsgHistory_v.rs is completed
+verus failed, reverting
+minimization of ./splinter-min-multiset/20/allocation_layer/MiniAllocator_v.rs is completed
+minimization of ./splinter-min-multiset/13/allocation_layer/AllocationJournalRefinement_v.rs is completed
+commenting out line Lines { lines: 98..=102 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+commenting out line Lines { lines: 103..=103 } in "./splinter-min-multiset/22/allocation_layer/UnifiedCrashAwareJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=388 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 83..=83 } in "./splinter-min-multiset/18/allocation_layer/LikesJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 395..=397 } in "./splinter-min-multiset/22/allocation_layer/UnifiedCrashAwareJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=93 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 710..=715 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=135 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 390..=390 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 162..=162 } in "./splinter-min-multiset/18/allocation_layer/LikesJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 501..=501 } in "./splinter-min-multiset/22/allocation_layer/UnifiedCrashAwareJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 799..=806 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 329..=329 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+commenting out line Lines { lines: 94..=94 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 425..=425 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus succeeded with time: 53630ms
+commenting out line Lines { lines: 138..=138 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/18/allocation_layer/LikesJournalRefinement_v.rs is completed
+minimization of ./splinter-min-multiset/23/betree.rs is completed
+commenting out line Lines { lines: 146..=146 } in "./splinter-min-multiset/24/betree/BufferDisk_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 504..=504 } in "./splinter-min-multiset/22/allocation_layer/UnifiedCrashAwareJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 878..=878 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=242 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 333..=333 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 445..=445 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 144..=144 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/24/betree/BufferDisk_v.rs is completed
+minimization of ./splinter-min-multiset/25/betree/BufferOffsets_v.rs is completed
+commenting out line Lines { lines: 156..=156 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus succeeded with time: 53682ms
+minimization of ./splinter-min-multiset/22/allocation_layer/UnifiedCrashAwareJournal_v.rs is completed
+minimization of ./splinter-min-multiset/27/betree/Buffer_v.rs is completed
+minimization of ./splinter-min-multiset/28/betree/Domain_v.rs is completed
+commenting out line Lines { lines: 81..=81 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 889..=892 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 238..=244 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 518..=518 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 186..=186 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 160..=160 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 107..=107 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 995..=995 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=273 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 340..=340 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 615..=615 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 275..=275 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=169 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 117..=117 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 999..=1002 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 284..=284 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 344..=344 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 602..=618 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 279..=282 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 149..=173 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=118 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1026..=1026 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 288..=288 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 652..=652 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 319..=325 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 196..=196 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 203..=203 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1025..=1027 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 278..=291 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 687..=689 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 350..=350 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 328..=331 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 206..=206 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1031..=1031 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 204..=204 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 759..=762 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 338..=338 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 352..=352 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 332..=332 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 183..=209 } in "./splinter-min-multiset/26/betree/BufferSeq_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1084 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 200..=205 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 764..=764 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 406..=406 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/26/betree/BufferSeq_v.rs is completed
+minimization of ./splinter-min-multiset/30/betree/FilteredBetree_v.rs is completed
+commenting out line Lines { lines: 102..=102 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1097..=1097 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 749..=770 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 362..=370 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 412..=412 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 362..=365 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 220..=220 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 138..=138 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1260..=1261 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 407..=409 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 795..=795 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 402..=414 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 368..=371 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 131..=139 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 224..=224 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1290..=1290 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 414..=416 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 841..=841 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 428..=428 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 164..=172 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 374..=377 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 225..=225 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1294..=1298 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 395..=418 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 855..=858 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 429..=429 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 195..=195 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=386 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 213..=228 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1300..=1300 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 529..=529 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 439..=439 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 963..=964 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=198 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 395..=398 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 237..=237 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1305..=1307 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=530 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 440..=440 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 969..=969 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 199..=199 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 412..=412 } in "./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1308..=1308 } in "./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 260..=260 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 531..=531 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 441..=441 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 977..=977 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 227..=227 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/21/allocation_layer/UnifiedCrashAwareJournalRefinement_v.rs is completed
+commenting out line Lines { lines: 345..=345 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/4/abstract_system/AbstractCrashAwareSystemRefinement_v.rs is completed
+minimization of ./splinter-min-multiset/33/betree/LinkedBranch_v.rs is completed
+commenting out line Lines { lines: 150..=158 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 261..=261 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 800..=800 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 453..=453 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 971..=978 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 246..=246 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 342..=347 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=173 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 797..=801 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 257..=262 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 454..=454 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1018..=1018 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 243..=247 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 541..=541 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 191..=191 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 802..=802 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 455..=455 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 256..=263 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1021..=1023 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 267..=267 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1285..=1285 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 228..=228 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 829..=829 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 456..=456 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 286..=286 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1026..=1027 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 264..=268 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1289..=1289 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus succeeded with time: 55892ms
+commenting out line Lines { lines: 247..=247 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 831..=831 } in "./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 492..=492 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1025..=1028 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 270..=274 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1288..=1293 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 289..=296 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 269..=269 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/19/allocation_layer/LikesJournal_v.rs is completed
+minimization of ./splinter-min-multiset/35/betree/LinkedSeq_v.rs is completed
+minimization of ./splinter-min-multiset/36/betree/Memtable_v.rs is completed
+minimization of ./splinter-min-multiset/37/betree/OffsetMap_v.rs is completed
+commenting out line Lines { lines: 63..=63 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 493..=493 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1034..=1034 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 307..=307 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1295..=1301 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 271..=315 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=273 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 64..=64 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 494..=495 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1084 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 300..=312 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1510..=1510 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=317 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 280..=280 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 58..=65 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 503..=504 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1085..=1085 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=313 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1524..=1524 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=330 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 87..=87 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 505..=507 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1065..=1103 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 364..=364 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1571..=1571 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 359..=359 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 347..=347 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 95..=95 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 511..=511 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1111..=1111 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 357..=366 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1585..=1585 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 363..=377 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 110..=110 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 357..=357 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 550..=550 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1118..=1118 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 367..=367 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1589..=1589 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=382 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 120..=129 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 358..=358 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 561..=561 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1119..=1119 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 398..=398 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1581..=1592 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=383 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=148 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 373..=377 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 566..=576 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1124..=1124 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 403..=403 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1633..=1633 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 455..=455 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 149..=149 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 412..=420 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1128..=1129 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 594..=594 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 400..=404 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1634..=1634 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 460..=460 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 182..=182 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1127..=1130 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 578..=595 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1677..=1677 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 405..=405 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 422..=427 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=464 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 188..=188 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1140..=1140 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 553..=596 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1721..=1721 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 414..=414 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 475..=475 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 189..=189 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 495..=512 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1159..=1159 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 635..=635 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1714..=1722 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 411..=416 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 449..=482 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 183..=190 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 518..=518 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1178..=1178 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 636..=636 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1749..=1749 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 417..=417 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 445..=483 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 201..=201 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 542..=542 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1189..=1191 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 647..=648 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1737..=1750 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 435..=435 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 485..=485 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 202..=202 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1197..=1197 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 545..=545 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 681..=681 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1753..=1753 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 439..=439 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 516..=516 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 239..=239 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1207..=1207 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1775..=1775 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 682..=682 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 465..=465 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=554 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 533..=535 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 276..=280 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1166..=1216 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1860..=1860 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=689 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=477 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=556 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 553..=553 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 282..=282 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1504..=1506 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1858..=1861 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 481..=481 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus succeeded with time: 52678ms
+commenting out line Lines { lines: 690..=691 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 558..=558 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 562..=562 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 308..=309 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1869..=1869 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1512..=1512 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 493..=493 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 728..=728 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 551..=560 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 574..=590 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 344..=344 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1510..=1513 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1883..=1883 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 494..=494 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 737..=737 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 561..=561 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 357..=357 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1509..=1514 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1863..=1890 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 490..=499 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 735..=738 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus succeeded with time: 54113ms
+commenting out line Lines { lines: 602..=602 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 574..=574 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 365..=365 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1518..=1518 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1892..=1892 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 500..=500 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 740..=740 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 625..=625 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 389..=389 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 585..=585 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1526..=1526 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1925..=1925 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 502..=502 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 787..=793 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 607..=637 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 405..=405 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 588..=588 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1516..=1527 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1926..=1926 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 469..=505 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 795..=795 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 541..=642 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 416..=416 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 629..=629 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1536..=1536 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1939..=1939 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 506..=506 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 750..=807 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 644..=644 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 427..=427 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 611..=639 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1943..=1943 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1539..=1539 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 529..=529 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 846..=846 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 686..=686 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 447..=447 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 666..=666 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1928..=1945 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1553..=1553 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 540..=540 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 862..=864 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 694..=694 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 449..=449 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1951..=1951 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 667..=667 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1561..=1561 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 541..=541 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 893..=894 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 465..=472 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1976..=1976 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 660..=675 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1570..=1570 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=554 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 899..=899 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 698..=704 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 474..=474 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 676..=676 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1977..=1977 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1564..=1572 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 555..=555 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 906..=906 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=707 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=477 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=689 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1968..=1987 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1563..=1573 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 551..=560 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 930..=930 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 708..=708 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 495..=502 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1988..=1988 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 678..=710 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 561..=561 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1581..=1581 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 937..=937 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 717..=717 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 504..=504 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2026..=2026 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 713..=713 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+commenting out line Lines { lines: 537..=565 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1583..=1583 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 924..=938 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 719..=719 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 507..=507 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2019..=2040 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 566..=566 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 1577..=1585 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+commenting out line Lines { lines: 721..=721 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 944..=945 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 721..=727 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 516..=516 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2049..=2049 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 584..=584 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1591..=1591 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 736..=739 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1145..=1145 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 711..=730 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 536..=536 } in "./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/38/betree/PagedBetreeRefinement_v.rs is completed
+minimization of ./splinter-min-multiset/39/betree/PagedBetree_v.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 2042..=2061 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+commenting out line Lines { lines: 89..=89 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1594..=1594 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 599..=599 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 749..=749 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1163..=1166 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 731..=731 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2062..=2062 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1588..=1597 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 602..=602 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 164..=164 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 742..=751 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1185..=1185 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 758..=758 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2082..=2082 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1587..=1598 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 593..=606 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=167 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 752..=752 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1196..=1196 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 761..=761 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2083..=2083 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1600..=1602 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 617..=617 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 185..=185 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 765..=765 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1204..=1204 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 773..=773 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2111..=2111 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1606..=1622 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 618..=618 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 186..=186 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 785..=785 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1210..=1210 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 775..=775 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2105..=2120 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1695..=1695 } in "./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 608..=619 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 194..=194 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 784..=787 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1222..=1222 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 769..=784 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2128..=2128 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 640..=640 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/14/allocation_layer/AllocationJournal_v.rs is completed
+minimization of ./splinter-min-multiset/41/betree/PivotBetree_v.rs is completed
+commenting out line Lines { lines: 87..=87 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 776..=807 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1226..=1226 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 195..=195 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 765..=785 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2122..=2137 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 649..=649 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1227..=1227 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 819..=819 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 801..=801 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 210..=214 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2172..=2172 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 650..=650 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 830..=830 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1229..=1229 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 820..=820 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 254..=254 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2173..=2173 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 646..=652 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1235..=1235 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 823..=823 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 825..=833 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=263 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2171..=2174 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 653..=653 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 914..=914 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1239..=1239 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 843..=843 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1245..=1245 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 266..=266 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2178..=2178 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 701..=701 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 921..=925 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 844..=844 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1252..=1255 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 278..=278 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2176..=2179 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 698..=703 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 955..=955 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 850..=850 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1262..=1262 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 307..=307 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2182..=2182 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 708..=708 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 956..=956 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 811..=862 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1264..=1264 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2205..=2205 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 88..=88 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 316..=316 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 709..=709 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 957..=957 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 863..=863 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1270..=1270 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2203..=2206 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus succeeded with time: 50836ms
+commenting out line Lines { lines: 120..=120 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 345..=345 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 705..=710 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 963..=963 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 906..=906 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1275..=1275 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2212..=2212 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 361..=361 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 697..=711 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1006..=1006 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 909..=909 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 115..=122 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1285..=1285 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2215..=2215 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 386..=386 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=716 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1014..=1014 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 910..=910 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1280..=1286 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2225..=2225 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 387..=387 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 713..=718 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1016..=1016 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 900..=911 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 124..=128 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1291..=1291 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2231..=2231 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 393..=393 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1013..=1018 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 726..=726 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 915..=915 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1309..=1315 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2217..=2238 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 410..=425 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1021..=1021 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 727..=727 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 913..=917 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 130..=130 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1325..=1328 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2246..=2246 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 426..=426 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1023..=1023 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 720..=730 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 919..=919 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1365..=1365 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2240..=2254 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 435..=435 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1020..=1025 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 798..=798 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 937..=937 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1362..=1369 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 142..=142 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2273..=2273 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 450..=450 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1060..=1060 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 837..=837 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 954..=954 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1376..=1377 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2275..=2275 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 463..=463 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 147..=150 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1061..=1061 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 836..=839 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 952..=955 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1381..=1381 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2304..=2305 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 469..=469 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1084 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 843..=843 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 992..=992 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1371..=1382 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2337..=2337 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 486..=486 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 154..=154 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1126..=1126 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 841..=850 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 993..=993 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1333..=1383 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2325..=2344 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 520..=523 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus succeeded with time: 52161ms
+commenting out line Lines { lines: 158..=158 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1179..=1179 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 853..=856 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1030..=1030 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1452..=1452 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2375..=2375 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 527..=527 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1203..=1203 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 865..=865 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1044..=1044 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1451..=1455 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus succeeded with time: 77465ms
+commenting out line Lines { lines: 160..=160 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2416..=2416 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 525..=529 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1207..=1207 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 866..=866 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1457..=1462 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1045..=1045 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2420..=2420 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 180..=180 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 533..=533 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1209..=1209 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 862..=876 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1041..=1046 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1415..=1463 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2411..=2424 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 531..=534 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1210..=1210 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 877..=877 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 186..=186 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1466..=1469 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1047..=1047 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2466..=2466 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 577..=577 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1230..=1230 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 965..=965 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus succeeded with time: 55883ms
+commenting out line Lines { lines: 191..=191 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1520..=1520 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1065..=1065 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 625..=625 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1305..=1305 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus succeeded with time: 56097ms
+commenting out line Lines { lines: 2484..=2484 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 999..=999 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1073..=1073 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1521..=1521 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus succeeded with time: 53847ms
+commenting out line Lines { lines: 193..=193 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1327..=1327 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2487..=2487 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 626..=626 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1000..=1000 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1523..=1531 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1074..=1074 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1329..=1329 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2489..=2489 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 672..=674 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 996..=1002 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1070..=1075 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1501..=1532 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 195..=195 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1353..=1353 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus succeeded with time: 49718ms
+commenting out line Lines { lines: 2479..=2492 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 717..=717 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1004..=1004 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1076..=1076 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1535..=1538 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus succeeded with time: 52892ms
+commenting out line Lines { lines: 183..=198 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1349..=1356 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2556..=2563 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 727..=727 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1006..=1006 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1171..=1171 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1624..=1624 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1360..=1360 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2574..=2574 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 738..=738 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1173..=1173 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1009..=1009 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 204..=204 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1636..=1640 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1362..=1362 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 2569..=2587 } in "./splinter-min-multiset/32/betree/LinkedBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 759..=759 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1265..=1265 } in "./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1153..=1153 } in "./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/31/betree/LinkedBetreeRefinement_v.rs is completed
+minimization of ./splinter-min-multiset/43/betree/PivotBranch_v.rs is completed
+commenting out line Lines { lines: 102..=102 } in "./splinter-min-multiset/44/betree/PivotTable_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 210..=210 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/29/betree/FilteredBetreeRefinement_v.rs is completed
+minimization of ./splinter-min-multiset/45/betree/SplitRequest_v.rs is completed
+commenting out line Lines { lines: 34..=34 } in "./splinter-min-multiset/46/betree/Utils_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1650..=1650 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1363..=1368 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/32/betree/LinkedBetree_v.rs is completed
+minimization of ./splinter-min-multiset/47/disk.rs is completed
+minimization of ./splinter-min-multiset/48/disk/GenericDisk_v.rs is completed
+minimization of ./splinter-min-multiset/49/journal.rs is completed
+commenting out line Lines { lines: 52..=52 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 761..=761 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=104 } in "./splinter-min-multiset/44/betree/PivotTable_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 37..=37 } in "./splinter-min-multiset/46/betree/Utils_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1657..=1657 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus succeeded with time: 58191ms
+commenting out line Lines { lines: 211..=211 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1358..=1369 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 62..=62 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 775..=775 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 98..=106 } in "./splinter-min-multiset/44/betree/PivotTable_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 74..=74 } in "./splinter-min-multiset/46/betree/Utils_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1655..=1659 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus succeeded with time: 54322ms
+commenting out line Lines { lines: 216..=216 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1373..=1373 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 81..=81 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 776..=776 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/44/betree/PivotTable_v.rs is completed
+commenting out line Lines { lines: 200..=200 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1666..=1669 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 84..=84 } in "./splinter-min-multiset/46/betree/Utils_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1375..=1375 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 219..=219 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 82..=82 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 797..=797 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 198..=202 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1674..=1674 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/46/betree/Utils_v.rs is completed
+commenting out line Lines { lines: 96..=106 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1376..=1381 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus succeeded with time: 55474ms
+commenting out line Lines { lines: 220..=220 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=178 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 818..=818 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 197..=203 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=143 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1675..=1676 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1371..=1382 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 216..=216 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 830..=830 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus succeeded with time: 55798ms
+commenting out line Lines { lines: 225..=225 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 337..=337 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 191..=191 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1661..=1677 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1406..=1406 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 276..=276 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 850..=850 } in "./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs"
+verus succeeded with time: 53178ms
+commenting out line Lines { lines: 226..=226 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/40/betree/PivotBetreeRefinement_v.rs is completed
+commenting out line Lines { lines: 156..=161 } in "./splinter-min-multiset/53/journal/PagedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 261..=261 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1680..=1700 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1397..=1409 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 286..=286 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus succeeded with time: 54970ms
+commenting out line Lines { lines: 228..=228 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/53/journal/PagedJournal_v.rs is completed
+minimization of ./splinter-min-multiset/54/spec.rs is completed
+minimization of ./splinter-min-multiset/55/spec/AsyncDisk_t.rs is completed
+minimization of ./splinter-min-multiset/56/spec/ImplDisk_t.rs is completed
+minimization of ./splinter-min-multiset/57/spec/SystemModel_t.rs is completed
+commenting out line Lines { lines: 185..=185 } in "./splinter-min-multiset/58/spec/FloatingSeq_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 378..=383 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 425..=425 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1710..=1711 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1429..=1429 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 312..=312 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus succeeded with time: 52136ms
+commenting out line Lines { lines: 229..=229 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 183..=186 } in "./splinter-min-multiset/58/spec/FloatingSeq_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 447..=447 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 444..=444 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1715..=1715 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1421..=1433 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=393 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 187..=187 } in "./splinter-min-multiset/58/spec/FloatingSeq_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 448..=459 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 473..=473 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1730..=1731 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1450..=1450 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 442..=453 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=232 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 210..=210 } in "./splinter-min-multiset/58/spec/FloatingSeq_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 480..=480 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 489..=489 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1702..=1734 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1471..=1471 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=462 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 217..=235 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 205..=212 } in "./splinter-min-multiset/58/spec/FloatingSeq_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 498..=498 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 515..=515 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1736..=1737 } in "./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1472..=1472 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 470..=470 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/58/spec/FloatingSeq_t.rs is completed
+commenting out line Lines { lines: 129..=129 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=519 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus succeeded with time: 59309ms
+commenting out line Lines { lines: 503..=503 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/16/allocation_layer/LikesBetree_v.rs is completed
+minimization of ./splinter-min-multiset/60/spec/MapSpec_t.rs is completed
+minimization of ./splinter-min-multiset/61/spec/Messages_t.rs is completed
+commenting out line Lines { lines: 80..=84 } in "./splinter-min-multiset/62/spec/TotalKMMap_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1475..=1482 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 558..=558 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 236..=236 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 127..=131 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 529..=529 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 495..=513 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/62/spec/TotalKMMap_t.rs is completed
+minimization of ./splinter-min-multiset/63/exec.rs is completed
+commenting out line Lines { lines: 72..=72 } in "./splinter-min-multiset/64/exec/MiniAllocator_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1483..=1483 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 603..=603 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus succeeded with time: 56558ms
+commenting out line Lines { lines: 238..=238 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=140 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 531..=531 } in "./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=85 } in "./splinter-min-multiset/64/exec/MiniAllocator_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 517..=517 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/52/journal/PagedJournalRefinement_v.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1510..=1510 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 630..=630 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 138..=144 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus succeeded with time: 53672ms
+commenting out line Lines { lines: 241..=241 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 94..=94 } in "./splinter-min-multiset/64/exec/MiniAllocator_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 636..=636 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1509..=1518 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 322..=322 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 175..=175 } in "./splinter-min-multiset/64/exec/MiniAllocator_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=527 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 639..=639 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1534..=1534 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=242 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=324 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 194..=194 } in "./splinter-min-multiset/64/exec/MiniAllocator_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 481..=530 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 646..=646 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1535..=1535 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus succeeded with time: 47885ms
+commenting out line Lines { lines: 239..=249 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 352..=352 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/64/exec/MiniAllocator_v.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 586..=586 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 649..=649 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 360..=360 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 202..=253 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 584..=588 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 651..=651 } in "./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/50/journal/LinkedJournalRefinement_v.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 358..=361 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 713..=713 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1530..=1540 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=255 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 373..=373 } in "./splinter-min-multiset/59/spec/KeyType_t.rs"
+verus failed, reverting
+commenting out line Lines { lines: 944..=944 } in "./splinter-min-multiset/51/journal/LinkedJournal_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1545..=1545 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/59/spec/KeyType_t.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 271..=272 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/51/journal/LinkedJournal_v.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1546..=1546 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus succeeded with time: 34789ms
+commenting out line Lines { lines: 277..=277 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1542..=1551 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 278..=278 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1571..=1571 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1569..=1573 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 276..=279 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1574..=1574 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1592..=1592 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 282..=282 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1597..=1597 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 283..=283 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1615..=1615 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 281..=284 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1623..=1623 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1614..=1625 } in "./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/34/betree/LinkedBranch_v/Refinement_v.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 323..=358 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 360..=360 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 391..=391 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=392 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 36525ms
+commenting out line Lines { lines: 406..=406 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33083ms
+commenting out line Lines { lines: 412..=412 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=437 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 439..=439 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 486..=486 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 518..=518 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=519 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 525..=525 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 528..=528 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 531..=531 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 542..=542 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 543..=543 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 544..=544 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 546..=546 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 550..=550 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32641ms
+commenting out line Lines { lines: 536..=552 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 559..=559 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 567..=567 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 568..=568 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 570..=570 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=575 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 581..=581 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 587..=587 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 588..=588 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 590..=590 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 592..=592 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33487ms
+commenting out line Lines { lines: 577..=596 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 605..=605 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 607..=607 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 614..=614 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 615..=615 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 617..=617 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 619..=619 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32817ms
+commenting out line Lines { lines: 620..=620 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33366ms
+commenting out line Lines { lines: 598..=622 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 665..=665 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33036ms
+commenting out line Lines { lines: 667..=673 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 717..=717 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 751..=751 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 756..=757 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 760..=760 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 780..=780 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33406ms
+commenting out line Lines { lines: 787..=787 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33698ms
+commenting out line Lines { lines: 796..=796 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 802..=802 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 812..=812 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 809..=813 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 818..=818 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 815..=819 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 880..=880 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 894..=894 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 916..=921 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 946..=946 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 954..=954 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 956..=956 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 953..=958 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 961..=961 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 963..=963 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 960..=965 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1003..=1003 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1028..=1028 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1029..=1029 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1034..=1034 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1035..=1035 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32882ms
+commenting out line Lines { lines: 1038..=1038 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1043..=1044 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1047..=1047 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32924ms
+commenting out line Lines { lines: 1051..=1051 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1077..=1077 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32957ms
+commenting out line Lines { lines: 1078..=1078 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1079..=1079 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1083..=1083 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32666ms
+commenting out line Lines { lines: 1084..=1084 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1085..=1085 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1086..=1086 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1090..=1090 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1092..=1092 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32759ms
+commenting out line Lines { lines: 1098..=1098 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33311ms
+commenting out line Lines { lines: 1100..=1100 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1101..=1101 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32990ms
+commenting out line Lines { lines: 1103..=1103 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1142..=1142 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1144..=1144 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1154..=1154 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1161..=1166 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1168..=1177 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33250ms
+commenting out line Lines { lines: 1194..=1194 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1233..=1233 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1234..=1234 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1238..=1238 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33373ms
+commenting out line Lines { lines: 1239..=1239 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1240..=1240 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33295ms
+commenting out line Lines { lines: 1241..=1241 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32858ms
+commenting out line Lines { lines: 1245..=1245 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33452ms
+commenting out line Lines { lines: 1247..=1247 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33131ms
+commenting out line Lines { lines: 1278..=1278 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1279..=1279 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1293..=1293 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1292..=1294 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1297..=1297 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1296..=1298 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1299..=1299 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32743ms
+commenting out line Lines { lines: 1258..=1301 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1311..=1311 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1319..=1319 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1324..=1324 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1326..=1326 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1328..=1328 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1305..=1334 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 43586ms
+commenting out line Lines { lines: 1364..=1364 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1366..=1366 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1365..=1367 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1369..=1369 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1368..=1370 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1376..=1376 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1374..=1377 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1380..=1380 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1381..=1381 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1378..=1382 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1396..=1396 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1393..=1398 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1406..=1406 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1403..=1408 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1457..=1457 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1459..=1459 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33253ms
+commenting out line Lines { lines: 1465..=1465 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 34436ms
+commenting out line Lines { lines: 1469..=1469 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1471..=1475 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1477..=1477 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1453..=1481 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1484..=1484 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1504..=1504 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1543..=1543 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1544..=1544 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1545..=1545 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1547..=1547 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1548..=1548 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1600..=1600 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33320ms
+commenting out line Lines { lines: 1603..=1603 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1605..=1605 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32965ms
+commenting out line Lines { lines: 1612..=1612 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1623..=1623 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1631..=1631 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1641..=1641 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33137ms
+commenting out line Lines { lines: 1630..=1649 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1662..=1662 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1667..=1667 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1666..=1668 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32791ms
+commenting out line Lines { lines: 1674..=1674 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1673..=1675 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1681..=1681 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1679..=1682 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1686..=1686 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1684..=1687 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1716..=1716 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1743..=1743 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1741..=1746 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 34099ms
+commenting out line Lines { lines: 1735..=1749 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1762..=1762 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33236ms
+commenting out line Lines { lines: 1751..=1765 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1721..=1785 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1803..=1803 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1807..=1814 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1800..=1817 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1824..=1824 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1827..=1827 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1821..=1829 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1833..=1833 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1819..=1836 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1844..=1844 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33243ms
+commenting out line Lines { lines: 1849..=1849 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1847..=1850 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1856..=1856 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1859..=1859 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1860..=1860 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 33106ms
+commenting out line Lines { lines: 1862..=1862 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus succeeded with time: 32724ms
+commenting out line Lines { lines: 1787..=1863 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1869..=1869 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1902..=1902 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1904..=1904 } in "./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs"
+verus failed, reverting
+minimization of ./splinter-min-multiset/42/betree/PivotBranchRefinement_v.rs is completed

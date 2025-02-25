@@ -502,7 +502,7 @@ state_machine!{UnifiedCrashAwareJournal{
             assert(post_aj.lsn_au_index.contains_key(last_lsn));
 //            assert(post_aj.lsn_au_index <= pre_aj.lsn_au_index);
 //            assert(!deallocs.contains(root.unwrap().au));
-            assert(post.dv.entries.contains_key(root.unwrap()));
+//            assert(post.dv.entries.contains_key(root.unwrap()));
         }
 
         post_aj.subrange_preserves_valid_structure(post.persistent.seq_start(), post.persistent.freshest_rec, post.persistent.first);

@@ -687,7 +687,7 @@ impl<T> LinkedBetree<T> {
 
         if start == child_idx {
             child.subdisk_implies_same_children_likes(result_child, ranking, 0);
-            assert(child.children_likes(ranking, 0) == result_child.children_likes(ranking, 0));
+//            assert(child.children_likes(ranking, 0) == result_child.children_likes(ranking, 0));
             assert(self.children_likes(ranking, start) == 
                 child.tree_likes(ranking).add(self.children_likes(ranking, start+1))); // trigger
 //            assert(result.children_likes(ranking, start) == 
