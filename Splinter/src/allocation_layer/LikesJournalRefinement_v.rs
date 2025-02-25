@@ -13,7 +13,8 @@ use crate::allocation_layer::LikesJournal_v::*;
 verus!{
 broadcast use vstd::seq_lib::group_seq_properties,
               vstd::map_lib::group_map_properties,
-              vstd::set_lib::group_set_properties;
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
 
 // The thrilling climax, the actual proof goal we want to use in lower
 // refinement layers.

@@ -18,7 +18,8 @@ use crate::trusted::KVStoreTokenized_v::*;
 verus! {
 broadcast use vstd::seq_lib::group_seq_properties,
               vstd::map_lib::group_map_properties,
-              vstd::set_lib::group_set_properties;
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
 
 
 // defines the set of allowable externally visible calls by the implementer program
