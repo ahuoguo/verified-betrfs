@@ -21,6 +21,11 @@ use crate::abstract_system::StampedMap_v::*;
 use crate::abstract_system::MsgHistory_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
+
 // Changes from a single buffer to a stack of buffers, tracks actvie buffers for ranges of keys.
 // Includes garbage collection of inactive buffers and compaction of buffers.
 // In contrast to the PivotBetree above, upon flushing a buffer down the tree, 
@@ -141,7 +146,7 @@ impl BetreeNode {
     pub proof fn flushed_ofs_inline_lemma(self, key: Key)
     {
         self->pivots.route_lemma(key);
-        assert( 0 <= self->pivots.route(key) < self->flushed.offsets.len() );
+//        assert( 0 <= self->pivots.route(key) < self->flushed.offsets.len() );
     }
 
 

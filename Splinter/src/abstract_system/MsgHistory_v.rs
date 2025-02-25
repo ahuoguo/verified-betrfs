@@ -9,7 +9,11 @@ use crate::spec::Messages_t::*;
 use crate::abstract_system::StampedMap_v::*;
 
 verus! {
-
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
+              
 /// A KeyedMessage stores a "key" to perform the operation in the stored
 /// "message" on.
 pub struct KeyedMessage { 
@@ -368,7 +372,7 @@ impl MsgHistory {
       // assert(history.can_follow(stamped_map.seq_end));
       Self::map_plus_history_lemma(stamped_map, history);
       Self::map_plus_history_seq_end_lemma(stamped_map, history);
-      assert(Self::map_plus_history(stamped_map, history).seq_end == stamped_map.seq_end + history.len());
+//      assert(Self::map_plus_history(stamped_map, history).seq_end == stamped_map.seq_end + history.len());
     }
   }
 

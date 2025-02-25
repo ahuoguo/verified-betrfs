@@ -12,6 +12,11 @@ use crate::marshalling::StaticallySized_v::*;
 use crate::marshalling::UniformSized_v::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
+
 
 
 // TODO: clean up the usize mess. Require all IntFormattable types to be no bigger than usize.

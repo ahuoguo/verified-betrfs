@@ -14,6 +14,11 @@ use crate::betree::OffsetMap_v::*;
 use crate::disk::GenericDisk_v::{Address};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
+
 #[verifier::ext_equal]
 pub struct BufferDisk<T> {
     pub entries: Map<Address, T>
@@ -132,13 +137,13 @@ impl<T: Buffer> BufferDisk<T> {
         let i_this = self.i_buffer_seq(addrs);
         let i_other = other.i_buffer_seq(addrs);
 
-        assert forall |i| 0 <= i < addrs.len()
-        implies i_this[i] == i_other[i]
-        by {
-            if self.entries.contains_key(addrs[i]) {
-                assert(other.entries.contains_key(addrs[i])); // trigger
-            }
-        }
+//        assert forall |i| 0 <= i < addrs.len()
+//        implies i_this[i] == i_other[i]
+//        by {
+//            if self.entries.contains_key(addrs[i]) {
+////                assert(other.entries.contains_key(addrs[i])); // trigger
+//            }
+//        }
         assert(i_this =~= i_other);
     }
 }
