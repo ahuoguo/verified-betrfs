@@ -485,7 +485,7 @@ state_machine!{UnifiedCrashAwareJournal{
         };
 
         AJ::State::inv_next(pre_aj, post_aj, aj_lbl);
-//        assert( post_aj.inv() );
+        assert( post_aj.inv() );
 
         reveal(AllocationJournal::State::next);
         reveal(AllocationJournal::State::next_by);
