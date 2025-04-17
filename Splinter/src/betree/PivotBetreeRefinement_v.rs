@@ -265,14 +265,14 @@ impl BetreeNode {
         }
 //        assert(Element::lte(child_domain->start, split_element));
 
-        assert forall |k:Key| #[trigger] right_keys.contains(k) <==> right_domain.contains(k)
-        by {
-            if right_domain.contains(k) {
-//                assert(!left_keys.contains(k));
-//                assert(child_domain.contains(k));
-//                assert(right_keys.contains(k));
-            }
-        }
+//        assert forall |k:Key| #[trigger] right_keys.contains(k) <==> right_domain.contains(k)
+//        by {
+//            if right_domain.contains(k) {
+////                assert(!left_keys.contains(k));
+////                assert(child_domain.contains(k));
+////                assert(right_keys.contains(k));
+//            }
+//        }
         assert(right_keys =~= right_domain.key_set());
     }
 
@@ -301,7 +301,7 @@ impl BetreeNode {
             
             self.child(key).split_leaf_wf(split_key);
 
-            assert forall |k| #[trigger] a->children.map[k] == b.i()->children.map[k] by {}
+//            assert forall |k| #[trigger] a->children.map[k] == b.i()->children.map[k] by {}
             assert(a->children.map =~= b.i()->children.map);
         } else {
             let child_pivot_idx = request->child_pivot_idx;
@@ -349,13 +349,13 @@ impl BetreeNode {
             b.i_children_lemma();
             self.child(key).i_children_lemma();
 
-            assert forall |k| #[trigger] a->children.map[k] == b.i()->children.map[k]
-            by {
-                if right_keys.contains(k) {
-//                    assert(b->pivots.bounded_key(k)); // trigger
-                    let r = b->pivots.route(k);
-                }
-            }
+//            assert forall |k| #[trigger] a->children.map[k] == b.i()->children.map[k]
+//            by {
+//                if right_keys.contains(k) {
+////                    assert(b->pivots.bounded_key(k)); // trigger
+//                    let r = b->pivots.route(k);
+//                }
+//            }
             assert(a->children.map =~= b.i()->children.map);
         }
     }

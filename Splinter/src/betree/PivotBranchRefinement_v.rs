@@ -1467,11 +1467,11 @@ ensures
             if (i < r+1) {
                 assert(post->children[i].all_keys().contains(key));
             } else if (i == r+1) {
-                assert({
-                    ||| post->children[r+1].all_keys().contains(key)
-                    ||| post->children[r+2].all_keys().contains(key)
-                    ||| key == pivot
-                });
+//                assert({
+//                    ||| post->children[r+1].all_keys().contains(key)
+//                    ||| post->children[r+2].all_keys().contains(key)
+//                    ||| key == pivot
+//                });
             } else {
                 assert(post->children[i+1].all_keys().contains(key));
             }
@@ -1637,7 +1637,7 @@ decreases
                     let last_key = split_keys.last();
 //                    assert(Key::lte(pivot, last_key));
 
-                    assert(path.target()->children[r2+1].all_keys().contains(last_key));
+//                    assert(path.target()->children[r2+1].all_keys().contains(last_key));
 //                    assert(path.target().all_keys().contains(last_key));
                     lemma_target_all_keys(children[r+1], path.subpath(), last_key);
 //                    assert(children[r+1].all_keys().contains(last_key));
@@ -1840,8 +1840,8 @@ ensures
 ////                assert(post.all_keys_below_bound(post_r2+1));
 ////                assert(Key::lt(k, post->pivots[post_r2+1]));
 //            }
-            assert(children[r+1].i().map.contains_key(k));
-            assert(r2 == post_r2);
+//            assert(children[r+1].i().map.contains_key(k));
+//            assert(r2 == post_r2);
         } else if (post_r2 == r+1) {
 //            assert(Key::lte(pivot, k)) by {
 //                assert(post.all_keys_above_bound(post_r2+1));
@@ -1858,11 +1858,11 @@ ensures
 //            assert(children[post_r2].i().map.contains_key(k));
             assert(r2 == post_r2-1);
         }
-        assert(pre.i().map.contains_key(k));
+//        assert(pre.i().map.contains_key(k));
     }
 
     // GOAL 1
-    assert(pre.i().map.dom() =~~= post.i().map.dom());
+//    assert(pre.i().map.dom() =~~= post.i().map.dom());
 
     // OVERALL GOAL
     assert(pre.i().map =~~= post.i().map);

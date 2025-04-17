@@ -2484,7 +2484,7 @@ impl<T: Buffer> Path<T>{
 //                    assert(intermediate_ranking.contains_key(new_root.children[i as int].unwrap()));
                     assert(intermediate_ranking.contains_key(self.linked.root.unwrap()));
 
-                    assert(new_ranking.contains_key(new_root.children[i as int].unwrap()));
+//                    assert(new_ranking.contains_key(new_root.children[i as int].unwrap()));
 //                    assert(new_ranking[new_root.children[i as int].unwrap()] < new_ranking[new_root_addr]);
                 }
             }

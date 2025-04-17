@@ -496,7 +496,7 @@ impl DiskView {
                     assert forall |addr| #[trigger] other_inner.entries.contains_key(addr)
                         implies other_inner.is_nondangling_pointer(other_inner.entries[addr].cropped_prior(other_inner.boundary_lsn)) by {
                         let aprior = self.entries[addr].cropped_prior(self.boundary_lsn);
-                        assert( self.entries.contains_key(addr) );
+//                        assert( self.entries.contains_key(addr) );
 //                        assert( self.is_nondangling_pointer(aprior) );
 //                        assert( other.wf() );
                         if aprior == root {

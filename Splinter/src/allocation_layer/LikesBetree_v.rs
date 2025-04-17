@@ -676,7 +676,7 @@ impl<T> LinkedBetree<T> {
 
         let result = self.flush(child_idx, buffer_gc, new_addrs);
         assert(self.root().valid_child_index(start));
-        assert(result.root().valid_child_index(start));
+//        assert(result.root().valid_child_index(start));
 
         let child = self.child_at_idx(start);
         let result_child = result.child_at_idx(start);
