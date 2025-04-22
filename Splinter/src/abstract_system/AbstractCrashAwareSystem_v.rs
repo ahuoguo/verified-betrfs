@@ -24,6 +24,10 @@ use crate::abstract_system::MsgHistory_v::{MsgHistory, KeyedMessage};
 // as enums are already namespaced under "Label", so it's like saying "Label Label"
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties;
 
 /// SyncReqId's are used to assign sync requests unique IDs. Actual value is meaningless beyond
 /// identifying a specific sync request.
