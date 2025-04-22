@@ -1523,7 +1523,7 @@ state_machine!{ AllocationJournal {
                     && #[trigger] pre_dv.addr_supports_lsn(witness, start_lsn);
 
 //                assert(pre_dv.entries.contains_key(witness)); // trigger
-//                assert(post_dv.entries.contains_key(witness));
+                assert(post_dv.entries.contains_key(witness));
                 assert(post_dv.addr_supports_lsn(witness, start_lsn)); // trigger
             }
 
