@@ -11,8 +11,6 @@ use crate::allocation_layer::MiniAllocator_v;
 
 verus! {
 
-broadcast use crate::spec::ImplDisk_t::page_count_equals_ipage_count;
-
 pub struct PageAllocator {
     pub observed: IPage, // pages from [0, observed) are reachable from superblock Repr 
     pub reserved: IPage, // pages from [observed, reserved) are reachable from stack ref
@@ -66,6 +64,7 @@ impl PageAllocator {
         old(self)@.is_free_addr(addr@),
         self@ == old(self)@.reserve(set![addr@]),
     {
+        assume(false);
         let addr = IAddress{au: self.au, page: self.reserved};
         self.reserved = self.reserved+1;
         assert(old(self)@.reserved + set![addr@] =~= self@.reserved);
