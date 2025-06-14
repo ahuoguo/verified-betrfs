@@ -14,6 +14,10 @@ use crate::implementation::MultisetMapRelation_v::*;
 use crate::implementation::DiskLayout_v::*;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 // TODO: put into vstd/multiset_lib.rs
 pub open spec fn multiset_to_set<V>(m: Multiset<V>) -> Set<V> {

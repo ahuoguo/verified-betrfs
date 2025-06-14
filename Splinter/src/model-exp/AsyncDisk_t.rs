@@ -11,6 +11,10 @@ use vstd::{map::*, seq::*, bytes::*};
 use crate::spec::MapSpec_t::{ID};
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 /// The `AU` type is the type for a unique allocation unit identifier (thus we use `nat`s).
 /// 

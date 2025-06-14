@@ -9,6 +9,10 @@ use crate::trusted::ReqReply_t::{Input, Output, Request, Reply};
 // use crate::implementation::MultisetMapRelation_v::*;
 
 verus! {
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 tokenized_state_machine!{KVStoreTokenized<ProgramModel: ProgramModelTrait>{
     fields {
