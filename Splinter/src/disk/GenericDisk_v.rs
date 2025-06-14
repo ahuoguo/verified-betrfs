@@ -13,6 +13,10 @@ use crate::spec::AsyncDisk_t;
 use crate::spec::ImplDisk_t;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 /// Exporting from trusted disk model
 pub type AU = AsyncDisk_t::AU;

@@ -19,6 +19,10 @@ use crate::spec::MapSpec_t::{AsyncMap, CrashTolerantAsyncMap};
 use crate::implementation::MultisetMapRelation_v::*; 
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub open spec fn externally_visible(ctam_lbl: CrashTolerantAsyncMap::Label) -> bool
 {

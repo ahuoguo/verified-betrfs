@@ -8,6 +8,10 @@ use crate::betree::BufferDisk_v::*;
 use crate::disk::GenericDisk_v::{Address};
 
 verus! {
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub trait Buffer : Sized {
     spec(checked) fn linked_contains(self, dv: BufferDisk<Self>, addr: Address, key: Key) -> bool

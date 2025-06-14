@@ -9,6 +9,10 @@ use state_machines_macros::state_machine;
 use crate::spec::MapSpec_t::*;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
     
     // SystemModel<ProgramModel> is a state machine defining the bottom layer
     // interaction  of player 2's program model and the disk model

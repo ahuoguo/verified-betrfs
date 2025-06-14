@@ -17,6 +17,10 @@ pub mod Refinement_v;
 // A LinkedBranch represents a B+ tree where each node is stored at a different disk address.
 // LinkedBranch refines to PivotBranch.
 verus! {
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 /// A LinkedBranch node. See PivotBranch_v::Node for more details.
 /// A LinkedBranch node stores addresses of child nodes rather than recursively storing the child

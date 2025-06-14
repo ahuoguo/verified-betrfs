@@ -22,6 +22,10 @@ use crate::implementation::JournalModel_v::*;
 use crate::implementation::JournalCoordinationSystem_v::*;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 impl JournalCoordinationSystem::State {
     pub open spec fn i(self) -> LikesJournal::State

@@ -9,6 +9,10 @@ use crate::implementation::DiskLayout_v::*;
 use crate::implementation::AtomicState_v::*;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub struct ConcreteProgramModel {
     pub state: AtomicState,

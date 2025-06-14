@@ -11,6 +11,10 @@ use crate::trusted::ClientAPI_t::*;
 // to the refinement proof that belongs with it.
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
     pub fn entry<KVStore: KVStoreTrait>() {
         let mut kvstore = KVStore::new();
         let api = ClientAPI::new(Ghost(kvstore.instance_id()));

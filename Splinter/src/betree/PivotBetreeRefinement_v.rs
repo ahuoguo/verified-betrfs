@@ -15,8 +15,12 @@ use crate::betree::PivotBetree_v::*;
 use crate::betree::SplitRequest_v::*;
 
 verus! {
-
-broadcast use PivotTable::route_lemma, PivotTable::route_is_lemma;
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties,
+              PivotTable::route_lemma, 
+              PivotTable::route_is_lemma};
 
 impl BetreeNode {
     pub open spec(checked) fn i_children_seq(self, start: int) -> Seq<PagedBetree_v::BetreeNode>

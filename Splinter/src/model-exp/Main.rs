@@ -5,7 +5,11 @@ use crate::spec::Obligation_t;
 // this is the only file that is trusted but allowed to access player 2 (untrusted) code
 // because at some point we must tie the theorem and the impl together
 
-verus!{    
+verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};    
     // fixed entry point provided by player 1
     fn main() {
         Impl::new().entry_point(

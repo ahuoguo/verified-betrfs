@@ -21,6 +21,10 @@ use crate::implementation::JournalModel_v::*;
 // to take just this we want to have an equivalent of crop but with lsnaddrindex
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub open spec fn addr_to_lsns(lsn_addr_index: LsnAddrIndex, addr: Address, bdy: LSN) -> Set<LSN>
 {

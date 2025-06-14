@@ -6,6 +6,10 @@ use vstd::{seq::*};
 use crate::spec::MapSpec_t::Version;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 // A contiguous sequence of T whose first index can be greater than zero.
 

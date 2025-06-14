@@ -12,6 +12,10 @@ use crate::trusted::KVStoreTokenized_t::*;
 use crate::trusted::SystemModel_t::*;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 // Auditor contracts for the program impl 
 pub trait KVStoreTrait : Sized{

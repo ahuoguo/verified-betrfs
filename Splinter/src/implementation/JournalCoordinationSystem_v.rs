@@ -21,6 +21,10 @@ use crate::implementation::Cache_v::*;
 use crate::implementation::JournalModel_v::*;
 
 verus!{
+broadcast use{vstd::seq_lib::group_seq_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub closed spec fn record_to_raw_page(record: JournalRecord) -> (out: RawPage)
 {
