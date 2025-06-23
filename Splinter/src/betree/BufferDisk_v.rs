@@ -137,13 +137,13 @@ impl BufferDisk<SimpleBuffer> {
         let i_this = self.i_buffer_seq(buffers);
         let i_other = other.i_buffer_seq(buffers);
 
-        assert forall |i| 0 <= i < buffers.len()
-        implies i_this[i] == i_other[i]
-        by {
-            if self.entries.contains_key(buffers[i]) {
-                assert(other.entries.contains_key(buffers[i])); // trigger
-            }
-        }
+//        assert forall |i| 0 <= i < buffers.len()
+//        implies i_this[i] == i_other[i]
+//        by {
+//            if self.entries.contains_key(buffers[i]) {
+////                assert(other.entries.contains_key(buffers[i])); // trigger
+//            }
+//        }
         assert(i_this =~= i_other);
     }
 }

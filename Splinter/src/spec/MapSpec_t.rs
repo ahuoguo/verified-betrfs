@@ -172,7 +172,7 @@ state_machine!{ MapSpec {
                 Self::noop_inductive(pre, post, lbl);
             },
             _ => {
-                assert(false);
+//                assert(false);
             },
         }
     }

@@ -199,7 +199,7 @@ impl DiskView {
             assert forall|k: Address| #[trigger] a.entries.dom().contains(k) implies
                 #[trigger] c.entries.dom().contains(k) && a.entries[k] == c.entries[k] by {
                 assert( b.entries.dom().contains(k) );
-                assert( c.entries.dom().contains(k) );
+//                assert( c.entries.dom().contains(k) );
             }
         }
     }
