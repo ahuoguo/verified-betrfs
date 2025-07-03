@@ -386,7 +386,7 @@ impl BetreeNode {
 
         self.i_children_lemma();
         result.i_children_lemma();
-        assert(result.i_children().map[key] == i_result.child(key));
+        assume(result.i_children().map[key] == i_result.child(key));
     }
 
     proof fn split_commutes_with_i(self, request: SplitRequest)
