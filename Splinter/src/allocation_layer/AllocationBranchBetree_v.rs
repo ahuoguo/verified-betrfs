@@ -516,7 +516,7 @@ state_machine!{ AllocationBranchBetree {
 //        assert(post.branch_aus.dom() == to_au_likes(branch_likes).dom());
 
         let root_to_au = Map::new(|addr| branch_likes.dom().contains(addr), |addr: Address| addr.au);
-        assert(root_to_au.dom() == branch_likes.dom());
+//        assert(root_to_au.dom() == branch_likes.dom());
         let au_to_root = root_to_au.invert();
 
         to_au_likes_domain(branch_likes);

@@ -2507,7 +2507,7 @@ impl<T: Buffer> Path<T>{
             self.valid_ranking_throughout(ranking);
 
             let r = self.linked.root().pivots.route(self.key);
-            assert(self.linked.root().valid_child_index(r as nat)); // trigger
+//            assert(self.linked.root().valid_child_index(r as nat)); // trigger
 //            assert(self.subpath().linked.has_root());
 
             let intermediate_ranking = self.subpath().ranking_after_substitution(replacement, sub_path_addrs, ranking);
@@ -2530,7 +2530,7 @@ impl<T: Buffer> Path<T>{
 //                    assert(intermediate_ranking.contains_key(new_root.children[i as int].unwrap()));
                     assert(intermediate_ranking.contains_key(self.linked.root.unwrap()));
 
-                    assert(new_ranking.contains_key(new_root.children[i as int].unwrap()));
+//                    assert(new_ranking.contains_key(new_root.children[i as int].unwrap()));
 //                    assert(new_ranking[new_root.children[i as int].unwrap()] < new_ranking[new_root_addr]);
                 }
             }
@@ -2582,7 +2582,7 @@ impl<T: Buffer> Path<T>{
             result.child_at_idx_reachable_addrs_ensures(r);
 
             self.subpath().substitute_reachable_buffers_ensures(replacement, sub_path_addrs, ranking);
-            assert(self.subpath().linked.reachable_buffer_addrs() == self.linked.child_at_idx(r).reachable_buffer_addrs());    
+//            assert(self.subpath().linked.reachable_buffer_addrs() == self.linked.child_at_idx(r).reachable_buffer_addrs());    
             assert(result_subtree.reachable_buffer_addrs() == result.child_at_idx(r).reachable_buffer_addrs()) 
             by {
                 let result_child = result.child_at_idx(r);

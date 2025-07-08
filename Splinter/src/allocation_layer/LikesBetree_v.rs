@@ -492,8 +492,8 @@ impl<T> LinkedBetree<T> {
 
             assert(result.root().valid_child_index(start)); // trigger
             assert(result.root().valid_child_index(start+1)); // trigger
-            assert(result.children_likes(ranking, start+1) == 
-                right.tree_likes(ranking).add(result.children_likes(ranking, start+2)));
+//            assert(result.children_likes(ranking, start+1) == 
+//                right.tree_likes(ranking).add(result.children_likes(ranking, start+2)));
 
             if child.root().is_leaf() {
                 child.leaf_likes_is_root_likes(ranking);
@@ -689,7 +689,7 @@ impl<T> LinkedBetree<T> {
 
         let result = self.flush(child_idx, buffer_gc, new_addrs);
         assert(self.root().valid_child_index(start));
-        assert(result.root().valid_child_index(start));
+//        assert(result.root().valid_child_index(start));
 
         let child = self.child_at_idx(start);
         let result_child = result.child_at_idx(start);
@@ -1263,7 +1263,7 @@ state_machine!{ LikesBetree {
 
         if betree.linked.has_root() {
             betree.linked.subdisk_implies_same_children_likes(pushed, pushed_ranking, 0);
-            assert(pushed_betree_likes =~= post_betree_likes);
+//            assert(pushed_betree_likes =~= post_betree_likes);
 
             betree.linked.subdisk_implies_same_buffer_likes(pushed, betree_likes);
 //            assert(pushed_betree_likes.contains(new_addrs.addr1));
@@ -1502,7 +1502,7 @@ state_machine!{ LikesBetree {
             path_addrs.to_multiset_ensures();
             assert(removed.is_disjoint_from(new_path_likes));
             assert(splitted_likes == splitted_likes.sub(new_subtree_likes).add(new_subtree_likes));
-            assert(new_subtree_likes == subtree_likes.sub(removed).add(new_addrs.likes()));
+//            assert(new_subtree_likes == subtree_likes.sub(removed).add(new_addrs.likes()));
 //            assert(splitted_likes == betree_likes.sub(old_path_likes).add(new_path_likes).sub(subtree_likes).add(new_subtree_likes));
 //            assert(splitted_likes == betree_likes.sub(old_path_likes).sub(removed).add(new_path_likes).add(new_addrs.likes()));
         }

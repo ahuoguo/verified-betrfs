@@ -472,7 +472,7 @@ impl AllocationBranch {
                 let post_branch = post.branch.unwrap();
 
                 Refinement_v::split_refines(pre_branch, addr, path, split_arg);
-                assert(post.mini_allocator.allocs[addr.au].reserved.contains(addr)); // trigger
+//                assert(post.mini_allocator.allocs[addr.au].reserved.contains(addr)); // trigger
 //                assert(post.mini_allocator.reserved_aus().contains(addr.au));
 //                assert(pre.mini_allocator.reserved_aus() <= post.mini_allocator.reserved_aus());   
 //                assert(post.inv());

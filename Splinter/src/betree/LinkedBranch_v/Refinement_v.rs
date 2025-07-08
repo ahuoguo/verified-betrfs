@@ -948,7 +948,7 @@ pub proof fn lemma_split_node_interpretation<T>(
                 }
             }
         }
-        assert(branch_addrs + set!{new_child_addr} =~= left_addrs + right_addrs);
+//        assert(branch_addrs + set!{new_child_addr} =~= left_addrs + right_addrs);
     }
 }
 
@@ -979,8 +979,8 @@ pub proof fn lemma_split_node_ranking<T>(
 //    assert(left_branch.root == post.root()->children[r]);
 //    assert(post_ranking.contains_key(left_branch.root));
     assert(post.root().valid_child_index(r+1));
-    assert(right_branch.root == post.root()->children[r+1]);
-    assert(post_ranking.contains_key(right_branch.root));
+//    assert(right_branch.root == post.root()->children[r+1]);
+//    assert(post_ranking.contains_key(right_branch.root));
 
     assert forall |a| #[trigger] post_ranking.contains_key(a) && left_branch.disk_view.entries.contains_key(a)
     implies left_branch.disk_view.node_children_respects_rank(post_ranking, a) by {
@@ -1182,15 +1182,15 @@ pub proof fn lemma_append_incremental<T>(keys: Seq<Key>, msgs: Seq<Message>, pat
         lemma_append_keys_are_path_equiv(keys, path, ranking);
         assert(keys.contains(keys[1])); // trigger
 //        assert(path.path_equiv(keys[1]));
-        assert(r == path.branch.root().route(keys[1]));
+//        assert(r == path.branch.root().route(keys[1]));
 //        assert(r == r1);
 //        assert(path.branch.root().valid_child_index(r+1));
 //        assert(path1.subpath().branch == path1.branch.child_at_idx(r+1));
-        assert(path1.subpath().branch == path.branch.child_at_idx(r+1).append(keys.take(1), msgs.take(1), path.subpath()));
+//        assert(path1.subpath().branch == path.branch.child_at_idx(r+1).append(keys.take(1), msgs.take(1), path.subpath()));
 //        assert(path1.subpath().branch == path.subpath().branch.append(keys.take(1), msgs.take(1), path.subpath()));
         lemma_append_incremental(keys, msgs, path.subpath(), path1.subpath(), ranking);
 
-        assert(post =~~= post1);
+//        assert(post =~~= post1);
     }
 }
 
@@ -1292,7 +1292,7 @@ pub proof fn lemma_append_via_insert_equiv<T>(branch: LinkedBranch<T>, keys: Seq
         let path1 = Path{branch: insert0, key: keys[1], depth: path.depth};
         lemma_append_via_insert_path(path, ranking, keys, msgs);
 //        assert(path1.valid());
-        assert(path1.target().root()->keys.last() == keys[0]);
+//        assert(path1.target().root()->keys.last() == keys[0]);
 //        assert(Key::lt(path1.target().root()->keys.last(), keys[1]));
 
         lemma_insert_preserves_ranking(branch, ranking, keys[0], msgs[0], path);
@@ -1424,11 +1424,11 @@ pub proof fn lemma_children_share_key_contradiction<T>(branch: LinkedBranch<T>, 
     if pivots.len() == 0 {
 //        assert(i == j);
     } else if i < j <= pivots.len() {
-        assert(j > 0);
+//        assert(j > 0);
         if i < j - 1 {
             assert(Key::lt(pivots[i], pivots[j-1]));
         }
-        assert(Key::lte(pivots[i], pivots[j-1]));
+//        assert(Key::lte(pivots[i], pivots[j-1]));
 
         assert(branch.all_keys_below_bound(i, ranking));
         assert(Key::lt(key, pivots[i]));
@@ -1487,7 +1487,7 @@ pub proof fn lemma_insert_preserves_wf<T>(pre: LinkedBranch<T>, ranking: Ranking
 
             let r = pre.root().route(key) + 1;
             broadcast use lemma_route_ensures;
-            assert(pre.root().valid_child_index(r));
+//            assert(pre.root().valid_child_index(r));
             lemma_insert_preserves_wf(pre.child_at_idx(r), ranking, key, msg, path.subpath());
             // Goal 3
             assert(post.disk_view.wf());
@@ -1628,7 +1628,7 @@ pub proof fn lemma_reachable_implies_all_keys_subset<T>(branch: LinkedBranch<T>,
 //            assert(union_seq_of_sets(subtree_addrs).contains(addr));
             lemma_union_seq_of_sets_contains(subtree_addrs, addr);
             let i = choose |i| 0 <= i < subtree_addrs.len() && (#[trigger] subtree_addrs[i]).contains(addr);
-            assert(branch.root().valid_child_index(i));
+//            assert(branch.root().valid_child_index(i));
             lemma_reachable_implies_all_keys_subset(branch.child_at_idx(i), ranking, addr);
             assert(branch.map_all_keys(ranking)[i].contains(key));
             lemma_set_subset_of_union_seq_of_sets(branch.map_all_keys(ranking), key);
@@ -1741,12 +1741,12 @@ pub proof fn i_internal_wf<T>(branch: LinkedBranch<T>, ranking: Ranking)
 //        assert(branch_i is Index);
         let pivots_i = branch_i->pivots;
         let children_i = branch_i->children;
-        assert(pivots_i.len() == children_i.len() - 1);
+//        assert(pivots_i.len() == children_i.len() - 1);
 
         assert forall |i| 0 <= i < children_i.len() implies (#[trigger] children_i[i]).wf() by {
             assert(branch.root().valid_child_index(i));
             let child = branch.child_at_idx(i);
-            assert(child.wf());
+//            assert(child.wf());
 //            assert(child.valid_ranking(ranking));
 //            assert(child.all_keys_in_range_internal(ranking)) by {
 ////                assert(branch.all_keys_in_range_internal(ranking));
@@ -1766,7 +1766,7 @@ pub proof fn i_internal_wf<T>(branch: LinkedBranch<T>, ranking: Ranking)
 
         assert forall |i| 0 <= i < children_i.len() - 1
         implies branch_i.all_keys_below_bound(i) by {
-            assert(branch.root()->pivots.len() == children_i.len() - 1);
+//            assert(branch.root()->pivots.len() == children_i.len() - 1);
 //            assert(branch.all_keys_in_range_internal(ranking));
             assert(branch.all_keys_below_bound(i, ranking));
             assert(branch.root().valid_child_index(i));

@@ -388,7 +388,7 @@ pub proof fn lemma_split_index_interpretation(old_index: Node, split_arg: SplitA
 
         let r = old_index.route(key);
 //        assert(0 <= r+1 < old_index->children.len());
-        assert(old_index->children[r+1].wf());
+//        assert(old_index->children[r+1].wf());
         Key::strictly_sorted_implies_sorted(old_index->pivots);
         if r+1 <= pivot_index {
 //            assert(0 <= r+1 < left_index->children.len());
@@ -713,7 +713,7 @@ pub proof fn query_refines(pre: Node, lbl: QueryLabel)
         let pivots = pre->pivots;
         let children = pre->children;
 
-        assert(children[r+1].wf());
+//        assert(children[r+1].wf());
 //        assert(lbl.msg == children[r+1].query(lbl.key)); // subgoal 1
 
         query_refines(children[r+1], lbl);
@@ -1599,7 +1599,7 @@ decreases
 //        assert(pivots == post->pivots);
 //        assert(forall |i| 0 <= i < children.len() && i != r+1 ==> #[trigger] children[i] == post->children[i]);
 //        assert(path.subpath().node == children[r+1]);
-        assert(path.subpath().valid());
+//        assert(path.subpath().valid());
         lemma_split_preserves_wf(children[r+1], path.subpath(), split_arg);
 //        assert(post->children[r+1] == children[r+1].split(path.subpath(), split_arg));
 //        assert(post->children[r+1].wf());
@@ -1637,7 +1637,7 @@ decreases
                     let last_key = split_keys.last();
 //                    assert(Key::lte(pivot, last_key));
 
-                    assert(path.target()->children[r2+1].all_keys().contains(last_key));
+//                    assert(path.target()->children[r2+1].all_keys().contains(last_key));
 //                    assert(path.target().all_keys().contains(last_key));
                     lemma_target_all_keys(children[r+1], path.subpath(), last_key);
 //                    assert(children[r+1].all_keys().contains(last_key));

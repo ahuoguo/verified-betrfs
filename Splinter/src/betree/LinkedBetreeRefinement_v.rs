@@ -395,11 +395,11 @@ impl LinkedBetree<SimpleBuffer>{
             let result = self.i_bdv();
             assert(result.valid_ranking(ranking));
 
-            assert forall |i| 0 <= i < result.i()->buffers.len()
-            implies #[trigger] result.i()->buffers[i] =~= self.i()->buffers[i]
-            by {
-                assert(self.reachable_buffer(self.root.unwrap(), self.root().buffers[i])); // trigger
-            }
+//            assert forall |i| 0 <= i < result.i()->buffers.len()
+//            implies #[trigger] result.i()->buffers[i] =~= self.i()->buffers[i]
+//            by {
+//                assert(self.reachable_buffer(self.root.unwrap(), self.root().buffers[i])); // trigger
+//            }
 //            assert(self.i()->buffers =~= result.i()->buffers);
 
             self.valid_buffer_dv_throughout();
