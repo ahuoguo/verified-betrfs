@@ -67,7 +67,7 @@ impl PageAllocator {
         assume(false);
         let addr = IAddress{au: self.au, page: self.reserved};
         self.reserved = self.reserved+1;
-        assert(old(self)@.reserved + set![addr@] =~= self@.reserved);
+//        assert(old(self)@.reserved + set![addr@] =~= self@.reserved);
         addr
     }
 
@@ -173,7 +173,7 @@ impl MiniAllocator {
             assert(self@.allocs =~= v.allocs);
     
             post_reserve.free_addr_implies_not_all_allocated();
-            assert(self@.curr == v.curr);        
+//            assert(self@.curr == v.curr);        
         }
 
         addr
