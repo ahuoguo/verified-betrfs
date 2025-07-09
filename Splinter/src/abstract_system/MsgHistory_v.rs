@@ -136,21 +136,21 @@ impl MsgHistory {
       &&& (other.is_empty() ==> result == _self)
     }
   {
-    assert forall |_self: MsgHistory, other: MsgHistory|
-    {
-      &&& _self.wf()
-      &&& other.wf()
-      &&& _self.can_concat(other)
-    } implies {
-      let result = #[trigger] _self.concat(other);
-      &&& result.wf()
-      &&& (forall |x| result.contains(x) <==> (_self.contains(x) || other.contains(x)))
-      &&& (other.is_empty() ==> result == _self)
-    }
-    by
-    {
-      _self.concat_lemma(other);
-    }
+//    assert forall |_self: MsgHistory, other: MsgHistory|
+//    {
+//      &&& _self.wf()
+//      &&& other.wf()
+//      &&& _self.can_concat(other)
+//    } implies {
+//      let result = #[trigger] _self.concat(other);
+//      &&& result.wf()
+//      &&& (forall |x| result.contains(x) <==> (_self.contains(x) || other.contains(x)))
+//      &&& (other.is_empty() ==> result == _self)
+//    }
+//    by
+//    {
+//      _self.concat_lemma(other);
+//    }
   }
 
   pub open spec(checked) fn can_discard_to(self, lsn: LSN) -> bool {
@@ -285,7 +285,7 @@ impl MsgHistory {
   {
     let left = self.discard_old(start).discard_recent(end);
     let right = self.discard_recent(end).discard_old(start);
-    assert(left.ext_equal(right));
+//    assert(left.ext_equal(right));
   }
 
   pub proof fn added_slices_union(self, middle: LSN)
@@ -298,7 +298,7 @@ impl MsgHistory {
         == self,
     {
       let other = self.discard_recent(middle).concat(self.discard_old(middle));
-      assert(self.ext_equal(other));
+//      assert(self.ext_equal(other));
     }
 
   // Returns `true` iff the given MsgHistory is an exact slice of MsgHistory
@@ -372,7 +372,7 @@ impl MsgHistory {
       // assert(history.can_follow(stamped_map.seq_end));
       Self::map_plus_history_lemma(stamped_map, history);
       Self::map_plus_history_seq_end_lemma(stamped_map, history);
-      assert(Self::map_plus_history(stamped_map, history).seq_end == stamped_map.seq_end + history.len());
+//      assert(Self::map_plus_history(stamped_map, history).seq_end == stamped_map.seq_end + history.len());
     }
   }
 

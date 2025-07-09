@@ -52,23 +52,23 @@ impl<T: Buffer> LinkedBetreeVars::State<T> {
         let (betree_likes, buffer_likes) = self.linked.transitive_likes();
         let pushed = self.linked.push_memtable(new_buffer, new_addrs);
         let _ = self.linked.push_memtable_new_ranking(new_buffer, new_addrs, self.linked.the_ranking());
-        assert( pushed.acyclic());
+//        assert( pushed.acyclic());
     
         let (pushed_betree_likes, pushed_buffer_likes) = pushed.transitive_likes();
         let discard_betree = self.linked.root_likes();
         let add_betree = new_betree.linked.root_likes();
 
         LikesBetree::State::push_memtable_likes_ensures(self, new_betree, new_buffer, new_addrs);
-        assert(pushed_betree_likes == betree_likes.sub(discard_betree).add(add_betree));
-        assert(pushed_buffer_likes == buffer_likes.insert(new_addrs.addr2));
+//        assert(pushed_betree_likes == betree_likes.sub(discard_betree).add(add_betree));
+//        assert(pushed_buffer_likes == buffer_likes.insert(new_addrs.addr2));
 
         to_au_likes_commutative_over_sub(betree_likes, discard_betree);
         to_au_likes_commutative_over_add(betree_likes.sub(discard_betree), add_betree);
-        assert(to_au_likes(pushed_betree_likes) == to_au_likes(betree_likes).sub(to_au_likes(discard_betree)).add(to_au_likes(add_betree)));
+//        assert(to_au_likes(pushed_betree_likes) == to_au_likes(betree_likes).sub(to_au_likes(discard_betree)).add(to_au_likes(add_betree)));
         
         to_au_likes_commutative_over_add(buffer_likes, Multiset::singleton(new_addrs.addr2));
         to_au_likes_singleton(new_addrs.addr2);
-        assert(to_au_likes(pushed_buffer_likes) == to_au_likes(buffer_likes).insert(new_addrs.addr2.au));
+//        assert(to_au_likes(pushed_buffer_likes) == to_au_likes(buffer_likes).insert(new_addrs.addr2.au));
 
         self.linked.push_memtable_ensures(new_buffer, new_addrs);
     }
@@ -92,13 +92,13 @@ impl<T: Buffer> LinkedBetreeVars::State<T> {
         let (post_betree_likes, post_buffer_likes) = new_betree.linked.transitive_likes();
 
         LikesBetree::State::grow_likes_ensures(self, new_betree, new_root_addr);
-        assert(post_betree_likes == betree_likes.insert(new_root_addr));
+//        assert(post_betree_likes == betree_likes.insert(new_root_addr));
         to_au_likes_singleton(new_root_addr);
         to_au_likes_commutative_over_add(betree_likes, Multiset::singleton(new_root_addr));
 
         LinkedBetreeVars::State::internal_grow_inductive(self, new_betree, 
             LinkedBetreeVars::Label::Internal{}, new_root_addr);
-        assert(new_betree.linked.valid_buffer_dv());
+//        assert(new_betree.linked.valid_buffer_dv());
     }
 
     pub proof fn internal_split_aus_ensures(self, new_betree: LinkedBetreeVars::State<T>, 
@@ -259,7 +259,7 @@ impl AllocationBetree::State {
         pushed.tree_likes_domain(pushed.the_ranking());
         pushed.buffer_likes_domain(pushed_betree_likes);
         restrict_domain_au_ensures(pushed_buffer_likes, pushed.buffer_dv.entries);
-        assert(new_betree.linked.valid_buffer_dv());
+//        assert(new_betree.linked.valid_buffer_dv());
     }
 
     proof fn internal_grow_inv_refines(pre: Self, post: Self, lbl: AllocationBetree::Label, 
@@ -302,7 +302,7 @@ impl AllocationBetree::State {
         splitted.tree_likes_domain(splitted.the_ranking());
         splitted.buffer_likes_domain(splitted_betree_likes);
         restrict_domain_au_ensures(splitted_buffer_likes, splitted.buffer_dv.entries);
-        assert(new_betree.linked.valid_buffer_dv());
+//        assert(new_betree.linked.valid_buffer_dv());
     }
 
     proof fn internal_flush_inv_refines(pre: Self, post: Self, lbl: AllocationBetree::Label, 
@@ -329,7 +329,7 @@ impl AllocationBetree::State {
         flushed.tree_likes_domain(flushed.the_ranking());
         flushed.buffer_likes_domain(flushed_betree_likes);
         restrict_domain_au_ensures(flushed_buffer_likes, flushed.buffer_dv.entries);
-        assert(new_betree.linked.valid_buffer_dv());
+//        assert(new_betree.linked.valid_buffer_dv());
     }
 
     proof fn internal_compact_complete_inv_refines(pre: Self, post: Self, lbl: AllocationBetree::Label, 
@@ -360,7 +360,7 @@ impl AllocationBetree::State {
         compacted.tree_likes_domain(compacted.the_ranking());
         compacted.buffer_likes_domain(compacted_betree_likes);
         restrict_domain_au_ensures(compacted_buffer_likes, compacted.buffer_dv.entries);
-        assert(new_betree.linked.valid_buffer_dv());
+//        assert(new_betree.linked.valid_buffer_dv());
     }
 
     proof fn next_refines(pre: Self, post: Self, lbl: AllocationBetree::Label) 
@@ -405,7 +405,7 @@ impl AllocationBetree::State {
                 pre.betree.linked.buffer_likes_domain(betree_likes);
                 restrict_domain_au_ensures(buffer_likes, pre.betree.linked.buffer_dv.entries);
 
-                assert(post.inv());
+//                assert(post.inv());
                 assert(LikesBetree::State::next_by(pre.i(), post.i(), lbl.i(), LikesBetree::Step::internal_buffer_noop(new_betree)));
             }
             AllocationBetree::Step::internal_noop() => {

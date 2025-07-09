@@ -53,34 +53,34 @@ broadcast use{vstd::seq_lib::group_seq_properties,
             by {
                 if addr != e {
                     assert(likes.remove(e).contains(addr)); // trigger
-                    assert(to_au_likes(likes.remove(e)).contains(addr.au));
-                    assert(to_au_likes(likes.remove(e)) <= to_au_likes(likes));
+//                    assert(to_au_likes(likes.remove(e)).contains(addr.au));
+//                    assert(to_au_likes(likes.remove(e)) <= to_au_likes(likes));
                 }
             }
 
             to_aus_singleton(e);
             to_au_likes_singleton(e);
-            assert(Multiset::singleton(e.au).dom() == set!{e.au});
+//            assert(Multiset::singleton(e.au).dom() == set!{e.au});
 
             to_aus_additive(likes.remove(e).dom(), set!{e});
             assert(likes.dom() == likes.remove(e).dom() + set!{e});
             to_au_likes_commutative_over_add(likes.remove(e), Multiset::singleton(e));
-            assert(to_au_likes(likes).dom() == to_au_likes(likes.remove(e)).dom() + to_au_likes(Multiset::singleton(e)).dom()); // trigger
+//            assert(to_au_likes(likes).dom() == to_au_likes(likes.remove(e)).dom() + to_au_likes(Multiset::singleton(e)).dom()); // trigger
         } else {
-            assert(likes.dom() == Set::<Address>::empty());
-            assert(to_au_likes(likes).dom() == Set::<AU>::empty());
-            assert(to_aus(likes.dom()) == Set::<AU>::empty());
+//            assert(likes.dom() == Set::<Address>::empty());
+//            assert(to_au_likes(likes).dom() == Set::<AU>::empty());
+//            assert(to_aus(likes.dom()) == Set::<AU>::empty());
         }
     }
 
     pub proof fn to_au_likes_singleton(addr: Address) 
         ensures to_au_likes(Multiset::singleton(addr)) == Multiset::singleton(addr.au)
     {
-        assert(Multiset::singleton(addr).choose() == addr);
+//        assert(Multiset::singleton(addr).choose() == addr);
         assert(Multiset::singleton(addr).remove(addr) =~= Multiset::empty());
         assert(to_au_likes(Multiset::empty()) == Multiset::<AU>::empty());
         // TODO: seems like we need to assert this rather than relying on the ensures?
-        assert(to_au_likes(Multiset::singleton(addr)) == Multiset::singleton(addr.au));
+//        assert(to_au_likes(Multiset::singleton(addr)) == Multiset::singleton(addr.au));
     }
 
     // NOTE: same proof as buffer_likes_additive, would be better if we can 
@@ -97,7 +97,7 @@ broadcast use{vstd::seq_lib::group_seq_properties,
         } else if delta.len() == 0 {
             assert(total =~= likes);
         } else {
-            assert(total.len() > 0);
+//            assert(total.len() > 0);
             let e = total.choose();
             let sub_au_likes = to_au_likes(total.remove(e));
 
@@ -108,7 +108,7 @@ broadcast use{vstd::seq_lib::group_seq_properties,
                 to_au_likes_commutative_over_add(likes.remove(e), Multiset::singleton(e));
                 assert(likes.remove(e).add(Multiset::singleton(e)) == likes);
             } else {
-                assert(delta.contains(e));
+//                assert(delta.contains(e));
                 to_au_likes_commutative_over_add(likes, delta.remove(e));
                 assert(total.remove(e) == likes.add(delta.remove(e))); // trigger
                 to_au_likes_commutative_over_add(delta.remove(e), Multiset::singleton(e));
@@ -123,7 +123,7 @@ broadcast use{vstd::seq_lib::group_seq_properties,
     {
         to_au_likes_commutative_over_add(likes.sub(delta), delta);
         assert(likes.sub(delta).add(delta) == likes); // trigger
-        assert(to_au_likes(likes.sub(delta)) == to_au_likes(likes).sub(to_au_likes(delta)));
+//        assert(to_au_likes(likes.sub(delta)) == to_au_likes(likes).sub(to_au_likes(delta)));
     }
 
     pub open spec fn restrict_domain_au<V>(m: Map<Address, V>, aus: Set<AU>) -> Set<Address>
@@ -143,7 +143,7 @@ broadcast use{vstd::seq_lib::group_seq_properties,
         assert forall |addr| #[trigger] likes.dom().contains(addr)
         implies kept_addrs.contains(addr) 
         by {
-            assert(m.contains_key(addr));
+//            assert(m.contains_key(addr));
             assert(likes.contains(addr)); // trigger
         }
     }
@@ -257,4 +257,3 @@ broadcast use{vstd::seq_lib::group_seq_properties,
     //     }
     // }
 }
-

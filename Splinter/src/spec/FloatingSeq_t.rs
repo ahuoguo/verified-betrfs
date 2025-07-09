@@ -195,7 +195,7 @@ impl<T> FloatingSeq<T> {
           // "implies" introduces the assumption explicitly inside the assert context
             assert(b[(self.start+i)]===b.entries[i]);    // by math
         }
-        assert(self.entries =~= (b.entries));  // tickle seq extn
+//        assert(self.entries =~= (b.entries));  // tickle seq extn
     }
 }
 
